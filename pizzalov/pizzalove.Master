@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="pizzalove.master.cs" Inherits="pizzalov.pizzalove" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Content/style.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <script src="Scripts/bootstrap.bundle.js"></script>
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+   
+
+ 
+
+ 
+</head>
+<body>
+
+    <form id="form1" runat="server">
+            <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark background"  >
+
+  <a class="navbar-brand" href="Default.aspx">
+    <img src="graphic\logo.png" alt="Logo" id="logo"/>
+</a>
+
+  <ul class="navbar-nav movenavtext">
+    <li class="nav-item">
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="Default.aspx">Forside</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="menu.aspx">Menu</a>
+    </li>
+
+
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Info
+      </a>
+      <div class="dropdown-menu">
+ <a class="dropdown-item" href="Contact.aspx">Kontakt</a>
+        <a class="dropdown-item" href="infotwo.html">Åbningstider</a>
+  
+      </div>
+    </li>
+  </ul>
+</nav>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+       
+         
+
+<div class="container">
+  <div class="row">
+    <div class="col col-xs-6 rem">
+<nav class="navbar fixed-bottom navbar-expand-lg  navbar-dark justify-content-center background" >
+      <a class="navbar-brand movefootertext1" href="index.html" >©Pizzalove.dk</a>
+  <div class="container">
+
+    <div class="col col xs-6 rememberfooter " >
+     <img src="graphic/logo.png" alt="logo" width = "45px">
+      <img src="graphic/fb.png" alt="fblogo" width = "25px">
+          <img src="graphic/in.png" alt="instalogo" width= "25px">
+
+          </div>
+      </div>
+</nav>
+        </div>
+    </div>
+</div>
+    </div>
+<!-- footer end-->
+    </form>
+</body>
+</html>

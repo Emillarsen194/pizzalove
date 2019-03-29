@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "listeopg", "listeopg\listeopg.csproj", "{D68F2162-2229-4BBE-8749-2F777477C91F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D68F2162-2229-4BBE-8749-2F777477C91F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D68F2162-2229-4BBE-8749-2F777477C91F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D68F2162-2229-4BBE-8749-2F777477C91F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D68F2162-2229-4BBE-8749-2F777477C91F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EBA86332-FBE2-4B34-BE7D-9DA2BADA7C74}
+	EndGlobalSection
+EndGlobal
